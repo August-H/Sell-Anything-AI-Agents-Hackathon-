@@ -1,0 +1,43 @@
+/* ───────── theme ───────── */
+:root{
+  --bg:#f9fafb;--bg2:#ffffff;--fg:#111827;
+  --accent:#6366f1;--card:#eef0f6;--card2:#dfe2ec
+}
+.dark{
+  --bg:#1e1e24;--bg2:#2b2b33;--fg:#e6e7eb;
+  --accent:#6366f1;--card:#2f333f;--card2:#3c4254
+}
+
+/* ───────── reset ───────── */
+*{box-sizing:border-box;margin:0;padding:0}
+html,body,#root{height:100%;background:var(--bg);color:var(--fg);font-family:Inter,system-ui,sans-serif}
+
+/* ───────── layout ───────── */
+.app{display:flex;height:100%}
+
+/* sidebar */
+.bar{width:250px;background:#11151c;color:#e4e4e4;display:flex;flex-direction:column}
+.bar.closed{width:60px}
+.bar-hdr{display:flex;align-items:center;justify-content:space-between;padding:14px 12px;font-size:15px}
+.bar-hdr button{background:none;border:none;color:#e4e4e4;cursor:pointer}
+.newchat{display:flex;align-items:center;gap:6px;padding:10px 14px;border:none;background:none;color:#fff;font-size:14px;cursor:pointer}
+.threads{flex:1;overflow-y:auto}
+.thread{display:flex;align-items:center;gap:8px;padding:10px 14px;border:none;background:none;color:#c8cad0;font-size:14px;width:100%;cursor:pointer}
+.thread.on{background:#2d3345;color:#fff}
+
+/* mode toggle */
+.mode{margin:12px;border:none;padding:8px 12px;background:#2d3345;color:#fff;display:flex;align-items:center;gap:8px;cursor:pointer}
+
+/* main */
+main{flex:1;display:flex;flex-direction:column}
+.msgs{flex:1;overflow-y:auto;padding:26px;display:flex;flex-direction:column;gap:18px}
+.msg{max-width:640px;line-height:1.45;white-space:pre-wrap;word-break:break-word}
+.msg.assistant{background:var(--card);padding:10px 14px;border-radius:12px}
+.msg.user{background:var(--card2);padding:10px 14px;border-radius:12px;align-self:flex-end}
+
+/* composer */
+.inputBox{display:flex;gap:10px;padding:14px;background:var(--bg2)}
+.inputBox textarea{flex:1;resize:none;border:none;padding:10px 12px;font-size:15px;border-radius:8px;background:var(--bg);color:var(--fg)}
+.inputBox textarea:focus{outline:2px solid var(--accent)}
+.inputBox button{width:44px;border:none;border-radius:8px;display:flex;align-items:center;justify-content:center;background:var(--accent);color:#fff;cursor:pointer}
+.inputBox button:disabled{opacity:.35;cursor:default}
