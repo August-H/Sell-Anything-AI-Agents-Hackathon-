@@ -15,7 +15,7 @@ Sales Agent AI is an end-to-end cold outreach assistant that automates research,
 - **User Context:** Captures feedback on sent emails to drive future personalization and performance tracking.
 
 
-🎯 **Who Benefits:**  
+🎯 **Who is this for?**  
 - **Sales Professionals** looking to scale outreach without manual legwork.  
 - **Founders & Entrepreneurs** who need fast, polished cold emails to pitch investors or customers.  
 - **Business Development Teams** aiming to boost reply rates through data-driven personalization.
